@@ -26,6 +26,7 @@ const callAbout=async()=>{
     var data = await response.json();
     console.log(data)
     setUser(data)
+    setState(true)
     if(response.status!==200){
       throw new Error("HUI")
     }
@@ -52,7 +53,7 @@ useEffect(()=>{
             alt="User image"
           />
           <div className="card-body">
-            <h5 className="card-title">{user.firstName?setState(true):setState(false)} {user.firstName} {user.lastName}</h5>
+            <h5 className="card-title"> {user.firstName} {user.lastName}</h5>
             <p className="card-text">
               {user.course} Developer
             </p>
