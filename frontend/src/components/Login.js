@@ -80,7 +80,7 @@ let name,value;
             </div>
 
             <div>
-              <p class="mb-0">Don't have an account? <a href="/SignUp" class="text-white-50 fw-bold">Sign Up</a></p>
+              <p class="mb-0">Don't have an account? <Link to="/SignUp" class="text-white-50 fw-bold">Sign Up</Link></p>
             </div>
 
           </div>
