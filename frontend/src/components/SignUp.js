@@ -72,7 +72,7 @@ export default function app() {
   return (
     <>
       <div className="container">
-        <div className="container ">
+        <div className="container">
 
           <section className="vh-100 gradient-custom mb-5">
 
@@ -81,7 +81,7 @@ export default function app() {
               <div className="row justify-content-center align-items-center h-100">
 
                 <div className="col-12 col-lg-9 col-xl-7">
-                <h2 className="text-center mt-5">Coding Bootcamp</h2>
+                <h2 className="text-center">Coding Bootcamp</h2>
                 <h6 className="text-center mb-5">by Aman thokale</h6>
                   <div className="card shadow-2-strong card-registration bg-dark">
                     <div className="card-body p-4 p-md-5">
