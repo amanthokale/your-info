@@ -1,3 +1,9 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+
 h1,
 p {
   font-family: Lato;
@@ -14,4 +20,8 @@ p {
 .aman{
   height:300px;
   width: 300px;
+}
+
+.foot{
+  height:40px;
 }
