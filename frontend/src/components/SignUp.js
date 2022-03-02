@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
+import {Link} from 'react-router-dom';
 
 export default function app() {
   var Navigate = useNavigate();
@@ -71,16 +72,21 @@ export default function app() {
   return (
     <>
       <div className="container">
-        <div className="container">
-          <h2 className="text-center mt-5">Nowrosjee Wadia College</h2>
-          <section className="vh-100 gradient-custom">
-            <div className="container py-5 h-100">
+        <div className="container ">
+
+          <section className="vh-100 gradient-custom mb-5">
+
+            <div className="container py-5 h-100 mb-5">
+
               <div className="row justify-content-center align-items-center h-100">
+
                 <div className="col-12 col-lg-9 col-xl-7">
-                  <div className="card shadow-2-strong card-registration">
+                <h2 className="text-center mt-5">Coding Bootcamp</h2>
+                <h6 className="text-center mb-5">by Aman thokale</h6>
+                  <div className="card shadow-2-strong card-registration bg-dark">
                     <div className="card-body p-4 p-md-5">
-                      <h3 className="mb-4 pb-2 pb-md-0 mb-md-5">
-                        Registration Form
+                      <h3 className="mb-4 pb-2 pb-md-0 mb-md-5 text-white text-center">
+                        REGISTRATION
                       </h3>
                       <form method="POST">
                         <div className="row">
@@ -94,7 +100,7 @@ export default function app() {
                                 value={user.firstName}
                                 onChange={handleInputs}
                               />
-                              <label className="form-label" for="firstName">
+                              <label className="form-label text-white" for="firstName">
                                 First Name
                               </label>
                             </div>
@@ -109,7 +115,7 @@ export default function app() {
                                 value={user.lastName}
                                 onChange={handleInputs}
                               />
-                              <label className="form-label" for="lastName">
+                              <label className="form-label text-white" for="lastName">
                                 Last Name
                               </label>
                             </div>
@@ -127,13 +133,13 @@ export default function app() {
                                 value={user.age}
                                 onChange={handleInputs}
                               />
-                              <label for="age" className="form-label">
+                              <label for="age" className="form-label text-white">
                                 Age
                               </label>
                             </div>
                           </div>
                           <div className="col-md-6 mb-4">
-                            <h6 className="mb-2 pb-1">Gender: </h6>
+                            <h6 className="mb-2 pb-1 text-white">Gender: </h6>
 
                             <div className="form-check form-check-inline">
                               <input
@@ -145,7 +151,7 @@ export default function app() {
                                 onChange={handleInputs}
 
                               />
-                              <label className="form-check-label" for="gender">
+                              <label className="form-check-label text-white" for="gender">
                                 Male
                               </label>
                             </div>
@@ -159,7 +165,7 @@ export default function app() {
                                 value="Female"
                                 onChange={handleInputs}
                               />
-                              <label className="form-check-label" for="gender">
+                              <label className="form-check-label text-white" for="gender">
                                 Female
                               </label>
                             </div>
@@ -174,7 +180,7 @@ export default function app() {
                                 onChange={handleInputs}
 
                               />
-                              <label className="form-check-label" for="gender">
+                              <label className="form-check-label text-white" for="gender">
                                 Other
                               </label>
                             </div>
@@ -192,7 +198,7 @@ export default function app() {
                                 value={user.email}
                                 onChange={handleInputs}
                               />
-                              <label className="form-label" for="email">
+                              <label className="form-label text-white" for="email">
                                 Email
                               </label>
                             </div>
@@ -208,7 +214,7 @@ export default function app() {
                                   onChange={handleInputs}
                                 />
                                 <label
-                                  className="form-label"
+                                  className="form-label text-white"
                                   for="form3Example4c"
                                 >
                                   Password
@@ -228,7 +234,7 @@ export default function app() {
                                   onChange={handleInputs}
                                 />
                                 <label
-                                  className="form-label"
+                                  className="form-label text-white"
                                   for="form3Example4cd"
                                 >
                                   Repeat your password
@@ -246,7 +252,7 @@ export default function app() {
                                 value={user.mobile}
                                 onChange={handleInputs}
                               />
-                              <label className="form-label" for="phoneNumber">
+                              <label className="form-label text-white" for="phoneNumber">
                                 Phone Number
                               </label>
                             </div>
@@ -257,7 +263,7 @@ export default function app() {
                           <div className="col-12">
                             <select
                               name="course"
-                              className="select form-control-lg"
+                              className="select form-control-lg text-white bg-dark"
                               onChange={handleInputs}
                             >
                               <option value="" >
@@ -267,7 +273,7 @@ export default function app() {
                               <option value="Python">Python</option>
                               <option value="Java">Java</option>
                             </select>
-                            <label className="form-label select-label">
+                            <label className="form-label select-label text-white ms-3">
                               Choose option
                             </label>
                           </div>
@@ -283,10 +289,10 @@ export default function app() {
                             />
                           </div>
                           <div className="mt-4 pt-2 ms-3">
-                            <a className="btn btn-success btn-lg" href="/login">
+                            <Link className="btn btn-success btn-lg" to="/login">
                               Login
-                            </a>
-                            <p>{user.notice}</p>
+                            </Link>
+
                           </div>
                         </div>
                       </form>

@@ -50,10 +50,15 @@ let name,value;
   };
   return (
     <>
-    <section class="vh-100 gradient-custom">
+
+    <section class="vh-100 gradient-custom mb-5">
+
   <div class="container py-5 h-100">
+
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+      <h2 className="text-center mt-5">Coding Bootcamp</h2>
+      <h6 className="text-center mb-5">by Aman thokale</h6>
         <div class="card bg-dark text-white">
           <div class="card-body p-5 text-center">
 
@@ -64,12 +69,12 @@ let name,value;
 
               <div class="form-outline form-white mb-4">
                 <input type="email" id="typeEmailX" class="form-control form-control-lg" name="email" value={user.email} onChange={handleInputs} />
-                <label class="form-label" for="typeEmailX">Email</label>
+                <label class="form-label ep" for="typeEmailX">Email</label>
               </div>
 
               <div class="form-outline form-white mb-4">
                 <input type="password" id="typePasswordX" class="form-control form-control-lg" name="password" value={user.password} onChange={handleInputs} />
-                <label class="form-label" for="typePasswordX">Password</label>
+                <label class="form-label ep" for="typePasswordX">Password</label>
               </div>
 
               <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
