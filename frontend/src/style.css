@@ -29,3 +29,9 @@ p {
   margin-right: 400px;
   margin-top: 5px;
 }
+
+.coursecard{
+  width: 18rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}

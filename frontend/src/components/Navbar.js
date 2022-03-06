@@ -42,7 +42,7 @@ try {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="#">
-            AT
+            अमन
           </Link>
           <button
             className="navbar-toggler"
@@ -71,6 +71,11 @@ try {
                 <Link className="nav-link" to="/Bio">
                   Profile
                 </Link>
+              </li>
+              <li>
+              <Link className="nav-link" to="/Course">
+                Courses
+              </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/Contact">
