@@ -8,10 +8,19 @@ const bcrypt =require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const auth = require('./middleware/auth');
 const cookieParser = require('cookie-parser');
+// const bodyparser = require('body-parser');
+// const paymentRoute = require('./paymentRoute');
+
+
 
 const port = process.env.PORT || 5000;
 app.use(express.json())
 app.use(cookieParser());
+// app.use(bodyparser.json())
+// app.use('/api',paymentRoute);
+
+
+
 
 
 app.post('/login',async(req,res)=>{
